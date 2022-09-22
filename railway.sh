@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export PATH=$PATH:/usr/bin:/usr/local/bin
-cd /root/railway
+cd $HOME/railway
 if [ "$1" = "up" ]; then
 	h=0
 	m=$(($RANDOM%60));
@@ -12,7 +12,7 @@ if [ "$1" = "up" ]; then
 	# delete last cron job
 	crontab -l > all.cron
 	sed -i "/railway.sh up/d" all.cron 
-	echo "$m $h * * * /root/railway/railway.sh down" >> all.cron
+	echo "$m $h * * * $HOME/railway/railway.sh down" >> all.cron
 	crontab all.cron
 elif [ "$1" = "down" ]; then
 	h=9
@@ -24,7 +24,7 @@ elif [ "$1" = "down" ]; then
 	# delete last cron job
 	crontab -l > all.cron
 	sed -i "/railway.sh down/d" all.cron 
-	echo "$m $h * * * /root/railway/railway.sh up" >> all.cron
+	echo "$m $h * * * $HOME/railway/railway.sh up" >> all.cron
 	crontab all.cron
 fi
 
