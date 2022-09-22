@@ -30,7 +30,7 @@ chmod +x railway.sh && ./railway.sh up
 chmod +x railway.sh && ./railway.sh down
 ```
 
-执行上述命令后将自动创建cron任务，每天定时执行部署和取消部署，保证项目在需要的时候可用。
+执行上述命令后将自动创建cron任务，每天定时执行部署和取消部署，保证项目在需要的时候可用，如需修改部署时间，修改railway.sh即可。
 
 > 如果github登录失败，可能是触发了登录验证，需要手动输入邮箱验证码即可。
 
