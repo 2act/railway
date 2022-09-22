@@ -7,12 +7,12 @@ railway免费版提供了每月500小时的运行时间，显然不满足每天2
 
 1. 获取本项目代码
 ```bash
-cd && git clone https://github.com/hugo-on/railway.git && cd railway
+cd && git clone https://github.com/hugo-on/railway.git && cd railway && mkdir -p chromeData
 ```
 
 2. 修改railway.js
 ```bash
-vi railway.js
+vim railway.js
 ```
 
 railway.js 中需要设置三处地方，分别是<b>github的用户名和密码</b>，还有<b>railway中服务的url地址</b>，该地址是<b>当railway处于如下界面</b>时的url地址：
