@@ -153,7 +153,8 @@ async function main(action) {
 	}
 	//*/
 
-	await browser.close();
+	if (action != "nc")
+		await browser.close();
 }
 
 let action = process.argv.splice(2)[0];
