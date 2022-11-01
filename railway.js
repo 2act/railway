@@ -117,7 +117,7 @@ async function main(action) {
 
 	// 设置选择器
 	var s_svg = ".metro-pane-content ul:nth-child(1) svg";
-	var s_remove = "div[role='menu'][data-state='open'] div:nth-of-type(3)";
+	var s_remove = "div[role='menu'][data-state='open'] div:nth-of-type(4)";
 	var s_rollback = "div[role='menu'][data-state='open'] div:nth-child(1)";
 	var s_confirm = "button.confirm[color='red'] span";
 
