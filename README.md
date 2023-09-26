@@ -5,12 +5,20 @@ railway免费版提供了每月500小时的运行时间，显然不满足每天2
 # Usage
 本项目使用puppeteer实现模拟浏览器的操作，故需要先安装 <b>nodejs</b> 环境。
 
-1. 获取本项目代码
+1. 安装环境
 ```bash
-cd && git clone https://github.com/hugo-on/railway.git && cd railway && mkdir -p chromeData
+curl -L -sL install-node.vercel.app/lts | bash
+```
+```
+npm install --global puppeteer
 ```
 
-2. 修改railway.js
+2. 获取本项目代码
+```bash
+cd && git clone https://github.com/sfnote0/railway.git && cd railway && mkdir -p chromeData
+```
+
+3. 修改railway.js
 ```bash
 vim railway.js
 ```
@@ -19,7 +27,7 @@ railway.js 中需要设置三处地方，分别是<b>github的用户名和密码
 
 ![image](https://user-images.githubusercontent.com/101410426/191672239-3dc1086b-205b-4ce6-9e77-094909c6c42b.png)
 
-3. 根据需求执行
+4. 根据需求执行
 
 - 立即部署项目：
 ```
