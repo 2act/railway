@@ -15,7 +15,7 @@ npm install --global puppeteer
 
 2. 获取本项目代码
 ```bash
-cd && git clone https://github.com/sfnotes/railway.git && cd railway && mkdir -p chromeData
+cd && git clone https://github.com/2act/railway.git && cd railway && mkdir -p chromeData
 ```
 
 3. 修改railway.js
